@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
-
 import { FaGithubAlt, FaPlus } from 'react-icons/fa';
+
+import api from '../../services/api';
 
 import { Container, Form, SubmitButton } from './styles';
 
 export default class Main extends Component{
 
-  state={
-    newRepo:''
+  state = {
+    newRepo:'',
+    repositories: []
   }
 
   handleInputChange = e =>{
@@ -16,10 +18,21 @@ export default class Main extends Component{
     });
   }
 
-  handleSubmit = e =>{
+  handleSubmit = async e =>{
     e.preventDefault();
 
-    console.log(this.state.newRepo);
+    const { newRepo, repositories } = this.state;
+
+    const response = await api.get(`/repos/${newRepo}`)
+
+    const data = {
+      name: response.data.full_name
+    }
+
+    this.setState({
+      repositories: [...repositories, data],
+      newRepo: ''
+    });
   }
 
   render(){
