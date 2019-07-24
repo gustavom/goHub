@@ -5,7 +5,7 @@ import api from '../../services/api';
 
 
 import Container from '../../components/Container';
-import { Loading, Owner, IssueList } from './styles';
+import { Loading, Owner, IssueList, LabelIssue } from './styles';
 
 export default class Repository extends Component{
   static propTypes = {
@@ -73,6 +73,10 @@ export default class Repository extends Component{
               <div>
                 <strong>
                   <a href={issue.html_url}>{issue.title}</a>
+                  {console.log(issue.labels)}
+                  {issue.labels.map(label =>(
+                    <LabelIssue key={String(label.id)} labelColor={label.color}>{label.name}</LabelIssue>
+                  ))}
                 </strong>
                 <p>{issue.user.login}</p>
               </div>
