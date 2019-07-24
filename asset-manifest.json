@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/goHub/static/js/main.9def9d85.chunk.js",
+    "main.js.map": "/goHub/static/js/main.9def9d85.chunk.js.map",
+    "runtime~main.js": "/goHub/static/js/runtime~main.bb720c03.js",
+    "runtime~main.js.map": "/goHub/static/js/runtime~main.bb720c03.js.map",
+    "static/js/2.fba58c57.chunk.js": "/goHub/static/js/2.fba58c57.chunk.js",
+    "static/js/2.fba58c57.chunk.js.map": "/goHub/static/js/2.fba58c57.chunk.js.map",
+    "index.html": "/goHub/index.html",
+    "precache-manifest.1c75316ac6e81845d8bc18f7870f7fb3.js": "/goHub/precache-manifest.1c75316ac6e81845d8bc18f7870f7fb3.js",
+    "service-worker.js": "/goHub/service-worker.js"
+  }
+}
