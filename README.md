@@ -1,6 +1,6 @@
 # [goHub](https://gustavom.github.io/goHub/)
 
-[![React app for github API consumption. User can add a repository to their list and view open issues.](./goHub-readme.png "goBook - React app for github API consumption. User can add a repository to their list and view open issues.")](https://gustavom.github.io/techmind/)
+[![React app for github API consumption. User can add a repository to their list and view open issues.](./goHub-readme.png "goBook - React app for github API consumption. User can add a repository to their list and view open issues.")](https://gustavom.github.io/goHub/)
 
 ## React app study of api consumption, styled-components, component creation, React Router and route control.
 
